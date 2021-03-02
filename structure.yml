@@ -1,0 +1,73 @@
+---
+# いろいろなクラスの構成案
+role
+  maincharactor
+    extend: 
+      - 
+  heroin
+    extend:
+      - base_role
+  demon_king
+    extend:
+      - base_role
+  king_of_startland
+    extend:
+      - base_role
+
+players
+  extend:
+    - job
+    - race
+  place
+  使命
+  能力
+  job
+  alive(bool)
+  is_exist_realworld
+  race
+
+job
+  sword_fighter
+  wizard
+  cleric
+  warrier
+
+race
+  エルフ
+  ドワーフ
+  人間
+  beastman
+  gods
+
+国
+  場所
+  王
+  has_
+
+object_collections
+  文明カテゴリ
+    中世
+      中世の町並み
+    魔法文明
+      現代の利器もどき
+      ファンタジー利器
+
+ダンジョン
+  洞窟
+  城
+  店
+
+event
+  generate_next_event
+  base_討伐イベントクラス
+  base_
+
+---
+# すべてのイベントが終了してからadd_eventsして続きが書けるよ
+プログラムの流れ
+  - define_object_sets
+  - add_object_set_to_world
+  - generate_world
+  - add_events
+  - foward_story_until_last_event
+  - 
